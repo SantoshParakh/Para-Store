@@ -13,11 +13,11 @@ const ProductCard = ({ product, addToCart }) => {
       <div className='w-full p-4 text-center'>
         <p className='text-xl font-semibold mb-2'>{product.title}</p>
         <p>{product.description}</p>
-        <p>{` ${product.price} Rs`}</p>
-        <p>{product.rating}</p>
-        <p>{product.brand}</p>
-        <p>{product.category}</p>
-        <p>{product.stock}</p>
+        <p>{` Price: ${product.price} Rs`}</p>
+        <p>{` Rating: ${product.rating}`}</p>
+        <p>{` Brand: ${product.brand}`}</p>
+        <p>{` Category: ${product.category}`}</p>
+        <p>{` In-Stock: ${product.stock}`}</p>
 
         <button className='mt-4 bg-blue-500 text-white px-4 py-2 rounded' onClick={() => addToCart(product)}>
           Add to Cart

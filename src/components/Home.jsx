@@ -48,7 +48,7 @@ const Home = () => {
        <div className='flex items-center space-x-4 mb-4'>
         
          <input
-          className='p-1 text-black '
+          className='p-2 text-black '
           type='text'
           placeholder='Search for products'
           value={searchQuery}
